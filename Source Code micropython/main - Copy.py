@@ -8,7 +8,7 @@ import urequests  # Để gửi yêu cầu HTTP
 import random  # Thêm để mô phỏng nhiệt độ ngẫu nhiên (nếu bạn chưa có cảm biến nhiệt độ thực tế)
 
 # Cấu hình WiFi
-ssid = 'P2408'
+ssid = 'vanhoa'
 password = '244466666'
 
 # Firebase cấu hình
