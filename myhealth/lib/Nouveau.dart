@@ -263,7 +263,7 @@ class _NouveauState extends State<Nouveau> {
                                           fontStyle: FontStyle.italic,
                                           fontWeight: FontWeight.bold,
                                           fontSize: 20,
-                                          color: Color(0xFFFFFDFD)
+                                          color: const Color(0xFFFFFDFD)
                                               .withOpacity(0.8)),
                                     ),
                                   ),

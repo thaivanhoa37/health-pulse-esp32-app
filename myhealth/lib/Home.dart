@@ -180,7 +180,7 @@ class _HomeState extends State<Home> {
                                   color: const Color(0xffffffff),
                                 ),
                                 height: 90,
-                                child: ChartHeatRate(),
+                                child: const ChartHeatRate(),
                               ),
                               const SizedBox(height: 20),
                               Container(
@@ -193,30 +193,30 @@ class _HomeState extends State<Home> {
                                 height: 50,
                                 child: Row(
                                   children: [
-                                    SizedBox(width: 10),
+                                    const SizedBox(width: 10),
                                     Text(
                                       "SpO2 :",
                                       textAlign: TextAlign.start,
                                       style: TextStyle(
-                                          color: Color(0xFF000000)
+                                          color: const Color(0xFF000000)
                                               .withOpacity(0.6),
                                           fontStyle: FontStyle.normal,
                                           fontWeight: FontWeight.bold,
                                           fontSize: 20),
                                     ),
-                                    SizedBox(width: 130),
+                                    const SizedBox(width: 130),
                                     Text(
                                       "$spo2%",
                                       textAlign: TextAlign.start,
                                       style: TextStyle(
-                                          color: Color(0xFF000000)
+                                          color: const Color(0xFF000000)
                                               .withOpacity(0.6),
                                           fontStyle: FontStyle.normal,
                                           fontWeight: FontWeight.bold,
                                           fontSize: 20),
                                     ),
-                                    SizedBox(width: 10),
-                                    Icon(
+                                    const SizedBox(width: 10),
+                                    const Icon(
                                       Icons.favorite,
                                       color: Colors.red,
                                       size: 30.0,

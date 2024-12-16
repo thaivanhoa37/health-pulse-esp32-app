@@ -148,7 +148,7 @@ class _HomePatientState extends State<HomePatient> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffE3DFDF),
+      backgroundColor: const Color(0xffE3DFDF),
       body: Stack(
         children: [
           SvgPicture.asset(
@@ -158,30 +158,30 @@ class _HomePatientState extends State<HomePatient> {
           Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              SizedBox(height: 100),
+              const SizedBox(height: 100),
               Text(
                 "List patients",
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                    color: Color(0xFF000000).withOpacity(0.8),
+                    color: const Color(0xFF000000).withOpacity(0.8),
                     fontStyle: FontStyle.italic,
                     fontWeight: FontWeight.bold,
                     fontSize: 35),
               ),
-              SizedBox(height: 30),
+              const SizedBox(height: 30),
               Container(
-                margin: EdgeInsets.symmetric(horizontal: 18),
+                margin: const EdgeInsets.symmetric(horizontal: 18),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(32),
-                  color: Color(0xffD2CECE),
+                  color: const Color(0xffD2CECE),
                 ),
                 height: 520,
                 child: Column(
                   children: [
                     Expanded(
                       child: Container(
-                        margin:
-                            EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                        margin: const EdgeInsets.symmetric(
+                            horizontal: 10, vertical: 5),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(32),
                         ),
@@ -194,13 +194,14 @@ class _HomePatientState extends State<HomePatient> {
                                   child: Text(snapshots.error.toString()));
                             }
                             if (!snapshots.hasData) {
-                              return Center(child: CircularProgressIndicator());
+                              return const Center(
+                                  child: CircularProgressIndicator());
                             }
                             QuerySnapshot data =
                                 snapshots.requireData as QuerySnapshot;
                             return GridView.builder(
                               gridDelegate:
-                                  SliverGridDelegateWithFixedCrossAxisCount(
+                                  const SliverGridDelegateWithFixedCrossAxisCount(
                                 childAspectRatio: 1,
                                 crossAxisCount: 2,
                                 crossAxisSpacing: 6,
@@ -224,27 +225,27 @@ class _HomePatientState extends State<HomePatient> {
                     ),
                     Row(
                       children: [
-                        SizedBox(width: 10),
+                        const SizedBox(width: 10),
                         Text(
                           "Add a new patient ",
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              color: Color(0xFF000000).withOpacity(0.8),
+                              color: const Color(0xFF000000).withOpacity(0.8),
                               fontStyle: FontStyle.normal,
                               fontWeight: FontWeight.bold,
                               fontSize: 18),
                         ),
-                        Spacer(),
+                        const Spacer(),
                         IconButton(
                           onPressed: () {
                             Navigator.push(
                                 context,
                                 CupertinoPageRoute(
-                                    builder: (contex) => Nouveau()));
+                                    builder: (contex) => const Nouveau()));
                           },
                           icon: Icon(
                             CupertinoIcons.add_circled,
-                            color: Color(0xFF000000).withOpacity(0.8),
+                            color: const Color(0xFF000000).withOpacity(0.8),
                             size: 30,
                           ),
                         ),

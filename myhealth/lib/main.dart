@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:myhealth/Home.dart';
 import 'package:myhealth/HomePatient.dart';
 
 void main() async {
